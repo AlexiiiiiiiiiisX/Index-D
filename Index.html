@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Mi Página</title>
 </head>
 <body>
@@ -17,10 +18,170 @@
         </nav>
     </header>
 
-    <main>
-        <section id="home">
-            <h2>Contenido Principal</h2>
-            <p>Este es el contenido principal de la página.</p>
+    <main class="text-white bg-[#ee3132]">
+        <div class="fixedglow relative isolate min-h-dvh overflow-hidden bg-[#ee3132] text-white">
+            <div
+                class="pointer-events-none absolute inset-y-0 left-0 -z-20 w-[78%] bg-[#72210e]/20 [clip-path:polygon(0_0,14%_0,100%_100%,0_100%)] sm:w-[68%]"
+                aria-hidden="true"
+            ></div>
+            <Image
+                src={swiffmark}
+                alt=""
+                loading="eager"
+                class="pointer-events-none absolute right-[-30%] top-[-12%] -z-10 w-287 max-w-none sm:right-[-15%] sm:top-[-20%] lg:right-[-6%] lg:top-[-28%] lg:w-300"
+                aria-hidden="true"
+            />
+            <div
+                class="pointer-events-none absolute inset-x-0 bottom-0 z-20 h-32 bg-linear-to-b from-transparent to-[#d52e2b] sm:h-44"
+                aria-hidden="true"
+            ></div>
+
+            <section
+                class="mx-auto flex min-h-dvh w-full max-w-360 flex-col items-center justify-center gap-1 px-5 py-8 sm:gap-2 sm:px-8 lg:flex-row lg:px-12 lg:py-10 xl:px-16"
+                aria-labelledby="hero-title"
+            >
+                <div class="z-10 flex w-full max-w-2xl shrink-0 flex-col items-center text-center lg:w-[43%] lg:items-start lg:text-left">
+                    <div class="flex items-center justify-center gap-4 sm:gap-6 lg:justify-start">
+                        <Image
+                            src={logodark}
+                            alt=""
+                            loading="eager"
+                            class="brandshadow size-20 object-contain sm:size-28 lg:size-32"
+                        />
+                        <h1
+                            id="hero-title"
+                            class="brandtextshadow text-6xl font-semibold tracking-[-0.055em] sm:text-8xl lg:text-[6.75rem] lg:leading-none"
+                        >
+                            Swiff
+                        </h1>
+                    </div>
+
+                    <p class="brandtextshadow mt-5 max-w-xl text-balance text-xl font-medium leading-snug text-white/95 sm:mt-7 sm:text-2xl lg:text-[1.7rem]">
+                        Flash games on Android, and many more!
+                    </p>
+
+                    <div class="mt-5 flex w-full flex-wrap items-center justify-center gap-1 sm:mt-7 sm:w-auto sm:flex-nowrap sm:gap-2 lg:justify-start">
+                        <a
+                            href="https://github.com/NaviVani-dev/Swiff/releases/latest"
+                            target="_blank"
+                            rel="noreferrer"
+                            class="rounded-xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+                            aria-label="Get Swiff on Github"
+                        >
+                            <Image
+                                src={getitongh}
+                                alt="Get it on Github"
+                                loading="eager"
+                                class="w-42 sm:w-47.5"
+                            />
+                        </a>
+                        <a
+                            href="https://apps.obtainium.page/redirect?r=obtainium://app/%7B%22id%22%3A%22io.navivani.swiff%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2FNaviVani-dev%2FSwiff%22%2C%22author%22%3A%22NaviVani%22%2C%22name%22%3A%22Swiff%22%2C%22otherAssetUrls%22%3Anull%2C%22apkUrls%22%3Anull%2C%22preferredApkIndex%22%3A0%2C%22additionalSettings%22%3A%22%7B%5C%22includePrereleases%5C%22%3Afalse%2C%5C%22fallbackToOlderReleases%5C%22%3Atrue%2C%5C%22filterReleaseTitlesByRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22filterReleaseNotesByRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22verifyLatestTag%5C%22%3Atrue%2C%5C%22sortMethodChoice%5C%22%3A%5C%22date%5C%22%2C%5C%22useLatestAssetDateAsReleaseDate%5C%22%3Afalse%2C%5C%22releaseTitleAsVersion%5C%22%3Afalse%2C%5C%22github-creds%5C%22%3A%5C%22%5C%22%2C%5C%22GHReqPrefix%5C%22%3A%5C%22%5C%22%2C%5C%22trackOnly%5C%22%3Afalse%2C%5C%22versionExtractionRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22matchGroupToUse%5C%22%3A%5C%22%5C%22%2C%5C%22versionDetection%5C%22%3Atrue%2C%5C%22releaseDateAsVersion%5C%22%3Afalse%2C%5C%22useVersionCodeAsOSVersion%5C%22%3Afalse%2C%5C%22apkFilterRegEx%5C%22%3A%5C%22%5C%22%2C%5C%22invertAPKFilter%5C%22%3Afalse%2C%5C%22autoApkFilterByArch%5C%22%3Atrue%2C%5C%22appName%5C%22%3A%5C%22%5C%22%2C%5C%22appAuthor%5C%22%3A%5C%22%5C%22%2C%5C%22shizukuPretendToBeGooglePlay%5C%22%3Afalse%2C%5C%22allowInsecure%5C%22%3Afalse%2C%5C%22exemptFromBackgroundUpdates%5C%22%3Afalse%2C%5C%22skipUpdateNotifications%5C%22%3Afalse%2C%5C%22about%5C%22%3A%5C%22%5C%22%2C%5C%22refreshBeforeDownload%5C%22%3Afalse%2C%5C%22includeZips%5C%22%3Afalse%2C%5C%22zippedApkFilterRegEx%5C%22%3A%5C%22%5C%22%7D%22%2C%22categories%22%3A%5B%22Emulator%22%5D%2C%22overrideSource%22%3A%22GitHub%22%2C%22allowIdChange%22%3Afalse%7D"
+                            target="_blank"
+                            rel="noreferrer"
+                            class="rounded-xl focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+                            aria-label="Get Swiff on Obtainium"
+                        >
+                            <Image
+                                src={getitonobtainium}
+                                alt="Get it on Obtainium"
+                                loading="eager"
+                                class="w-42 sm:w-47.5"
+                            />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative flex w-full items-center justify-center lg:w-[57%] lg:justify-end">
+                    <Image
+                        src={promo}
+                        alt="Swiff-Chan's cosplaying some Flash historical characters!"
+                        loading="eager"
+                        fetchpriority="high"
+                        class="w-full max-w-170 object-contain drop-shadow-[0_28px_30px_rgba(72,12,11,0.3)] lg:max-w-205 xl:max-w-225"
+                    />
+                </div>
+            </section>
+        </div>
+
+        <section
+            id="features"
+            class="relative overflow-hidden px-5 py-20 sm:px-8 sm:py-28 lg:py-36"
+        >
+            <div
+                class="pointer-events-none absolute -right-56 top-40 size-136 rounded-full bg-white/5 blur-3xl"
+                aria-hidden="true"
+            ></div>
+            <div
+                class="pointer-events-none absolute -left-64 bottom-72 size-152 rounded-full bg-[#72210e]/10 blur-3xl"
+                aria-hidden="true"
+            ></div>
+            <div class="relative mx-auto flex w-full max-w-6xl flex-col gap-12 sm:gap-16 lg:gap-24">
+                <div>
+                    <h2 class="brandtextshadow text-4xl font-semibold tracking-[-0.055em] sm:text-4xl lg:text-8xl lg:leading-none text-center">
+                        A huge library to discover
+                    </h2>
+                    <p class="brandtextshadow mt-5 max-w-full text-balance text-xl font-medium leading-snug text-white/95 sm:mt-7 sm:text-2xl lg:text-[1.7rem] text-center">
+                        Powered by the <a>Flashpoint Archive</a>, download
+                        and play more than 150k games and animations on
+                        Swiff.
+                    </p>
+                    <GamesMarquee class="mt-4 sm:mt-6" />
+                </div>
+                <div class="bg">
+                    <h2 class="brandtextshadow text-4xl font-semibold tracking-[-0.055em] sm:text-4xl lg:text-8xl lg:leading-none text-center">
+                        Packed of surprises
+                    </h2>
+                    <FeatureCarousel
+                        features={features}
+                        label="Swiff features"
+                        class="mt-10 sm:mt-14"
+                    />
+                </div>
+                <div>
+                    <h2 class="brandtextshadow text-4xl font-semibold tracking-[-0.055em] sm:text-4xl lg:text-8xl lg:leading-none text-center">
+                        More than Flash
+                    </h2>
+                    <p class="brandtextshadow mt-5 max-w-full text-balance text-xl font-medium leading-snug text-white/95 sm:mt-7 sm:text-2xl lg:text-[1.7rem] text-center">
+                        Swiff offers more platforms other than Flash games,
+                        check out all the platforms you can enjoy on the
+                        same app!
+                    </p>
+                    <PlatformRow
+                        platforms={platforms}
+                        class="mt-10 sm:mt-14"
+                    />
+                </div>
+                <div class="flex flex-col items-center gap-8 text-center lg:flex-row lg:justify-between lg:gap-12 lg:text-left">
+                    <div>
+                        <h3 class="brandtextshadow text-3xl font-semibold tracking-[-0.045em] sm:text-4xl lg:text-6xl lg:leading-[1.05]">
+                            Support Swiff
+                        </h3>
+                        <p class="brandtextshadow mt-5 max-w-full text-balance text-xl font-medium leading-snug text-white/95 sm:mt-7 sm:text-2xl lg:text-[1.7rem]">
+                            Swiff has, is and always will be free, will
+                            never sell your data (we don't even collect it),
+                            we will never show you ads or do anything
+                            sketchy with the app, so please consider sharing
+                            the app to all your friends or family, and if
+                            you have a spare dime, consider donating to my
+                            Ko-fi!
+                        </p>
+                    </div>
+                    <a
+                        href="https://ko-fi.com/navivani_dev"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="brandshadow inline-flex shrink-0 items-center gap-3 rounded-2xl bg-white px-7 py-4 text-lg font-semibold text-[#72210e] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white sm:text-xl"
+                    >
+                        <Kofi
+                            class="size-7 sm:size-8"
+                            fill="currentColor"
+                            aria-hidden="true"
+                        />
+                        Buy me a coffee
+                    </a>
+                </div>
+            </div>
         </section>
     </main>
 
